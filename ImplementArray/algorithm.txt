@@ -1,0 +1,9 @@
+Algorithm for Implement Array
+Step 1: Start
+Step 2: Declare an integer array arr[100] and integer variable n
+Step 3: Read the number of elements n
+Step 4: Repeat steps 5–6 for i = 0 to n - 1
+Step 5: Read array element arr[i]
+Step 6: End loop
+Step 7: Display all array elements
+Step 8: Stop
