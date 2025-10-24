@@ -1,9 +1,41 @@
-Algorithm for Implement Array
-Step 1: Start
-Step 2: Declare an integer array arr[100] and integer variable n
-Step 3: Read the number of elements n
-Step 4: Repeat steps 5–6 for i = 0 to n - 1
-Step 5: Read array element arr[i]
-Step 6: End loop
-Step 7: Display all array elements
-Step 8: Stop
+Algorithm for Implementing An Array
+Step 1: Start the program
+
+Step 2: Define class Array
+  Data members:
+    arr[100]: Static integer array.
+    size: Integer variable to track current number of elements (initialized to 0).
+  Member functions:  
+    insert(element): Adds a new element at the end of the array.
+    remove(index): Deletes an element at a given index.
+    search(key): Searches for an element by value.
+    display(): Displays all elements in the array.
+
+Step 3: Inside main()
+  Create an object myArray of class Array.
+  Declare variables: choice, value, and index.
+  Use a do-while loop to display a menu repeatedly:
+    1 → Insert
+    2 → Delete
+    3 → Search
+    4 → Display
+    5 → Exit
+
+Step 4: Based on user choice
+  Case 1 (Insert):
+    Ask user for value.
+    Call myArray.insert(value).
+  Case 2 (Delete):
+    Ask user for index.
+    Call myArray.remove(index).
+  Case 3 (Search):
+    Ask user for value.
+    Call myArray.search(value).
+  Case 4 (Display):
+    Call myArray.display().
+  Case 5 (Exit):
+    Display "Exiting program" and terminate loop.
+  Default:
+    Show "Invalid choice".
+
+Step 5: End program
