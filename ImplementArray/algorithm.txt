@@ -6,10 +6,39 @@ Step 2: Define class Array
     arr[100]: Static integer array.
     size: Integer variable to track current number of elements (initialized to 0).
   Member functions:  
-    insert(element): Adds a new element at the end of the array.
-    remove(index): Deletes an element at a given index.
-    search(key): Searches for an element by value.
-    display(): Displays all elements in the array.
+    insert(element): 
+        Check if size < 100.
+        If true: 
+          - Assign arr[size] = element
+          - Increment size by 1.
+        Else:
+          - Display "Array is full. Cannot insert more elements."
+
+    remove(index): 
+        Check if index < 0 or index >= size.
+        If true:
+          - Display "Invalid index." and stop.
+        Else:
+          - For i = index to size - 2:
+              Set arr[i] = arr[i + 1].
+          - Decrement size by 1.
+          - Display "Element deleted at index [index]."
+
+    search(key):
+        For i = 0 to size - 1:
+          - If arr[i] == key:
+        Display "Element [key] found at index [i]." and stop.
+        If element not found after loop:
+          - Display "Element [key] not found."
+        
+    display(): 
+        Check if size == 0.
+        If true:
+          - Display "Array is empty." and stop.
+        Else:
+          - Display "Array elements:"
+          - For i = 0 to size - 1:
+        Print arr[i] separated by spaces.
 
 Step 3: Inside main()
   Create an object myArray of class Array.
