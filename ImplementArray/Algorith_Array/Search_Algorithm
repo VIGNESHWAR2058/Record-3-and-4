@@ -1,0 +1,25 @@
+Algorithm: Search Function
+
+Step 1: Start
+
+Step 2: Initialize i = 0
+
+Step 3: Check the condition
+  If i < size, then go to Step 4
+  Else go to Step 8
+
+Step 4: Check if the current array element matches the search key
+  If arr[i] == key, then go to Step 7
+  Else go to Step 5
+
+Step 5: Increment i by 1
+  i = i + 1
+
+Step 6: Go back to Step 3 (Repeat the checking process for the next element)
+
+Step 7: Print "Element found at index" followed by the value of i
+  Go to Step 9
+
+Step 8: Print "Element not found"
+
+Step 9: Stop
