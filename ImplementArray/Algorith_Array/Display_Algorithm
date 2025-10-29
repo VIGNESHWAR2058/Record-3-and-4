@@ -17,5 +17,4 @@ Go back to Step 5 and repeat until i < size becomes False.
 False:
 Exit the loop.
 Step 6: After printing all elements, end the loop.
-Step 7: Proceed to the end of the function.
-Step 8: Stop the program.
+Step 7: Stop the program.
