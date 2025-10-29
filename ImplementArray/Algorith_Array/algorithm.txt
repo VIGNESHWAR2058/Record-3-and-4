@@ -1,70 +1,18 @@
-Algorithm for Implementing An Array
-Step 1: Start the program
+Step 1 : Start the Program
+Step 2 : Create an Object "myArray" of Class "Array"
+Step 3 : Display menu as below and get "choice"
+  1. Insert
+  2. Remove
+  3. Search
+  4. Display
+  5. Exit
+Step 4 : If (choice >= 6) go to step -, Else Continue
+Step 5 : If (choice = 1) 
+            get Value for Insert (value)
+            call myArray.insert(value)
+         elseif (choice = 2) 
+            get index to Remove (index)
+            call myArray.remove(index)
 
-Step 2: Define class Array
-  Data members:
-    arr[100]: Static integer array.
-    size: Integer variable to track current number of elements (initialized to 0).
-  Member functions:  
-    insert(element): 
-        Check if size < 100.
-        If true: 
-          - Assign arr[size] = element
-          - Increment size by 1.
-        Else:
-          - Display "Array is full. Cannot insert more elements."
 
-    remove(index): 
-        Check if index < 0 or index >= size.
-        If true:
-          - Display "Invalid index." and stop.
-        Else:
-          - For i = index to size - 2:
-              Set arr[i] = arr[i + 1].
-          - Decrement size by 1.
-          - Display "Element deleted at index [index]."
-
-    search(key):
-        For i = 0 to size - 1:
-          - If arr[i] == key:
-        Display "Element [key] found at index [i]." and stop.
-        If element not found after loop:
-          - Display "Element [key] not found."
-        
-    display(): 
-        Check if size == 0.
-        If true:
-          - Display "Array is empty." and stop.
-        Else:
-          - Display "Array elements:"
-          - For i = 0 to size - 1:
-        Print arr[i] separated by spaces.
-
-Step 3: Inside main()
-  Create an object myArray of class Array.
-  Declare variables: choice, value, and index.
-  Use a do-while loop to display a menu repeatedly:
-    1 → Insert
-    2 → Delete
-    3 → Search
-    4 → Display
-    5 → Exit
-
-Step 4: Based on user choice
-  Case 1 (Insert):
-    Ask user for value.
-    Call myArray.insert(value).
-  Case 2 (Delete):
-    Ask user for index.
-    Call myArray.remove(index).
-  Case 3 (Search):
-    Ask user for value.
-    Call myArray.search(value).
-  Case 4 (Display):
-    Call myArray.display().
-  Case 5 (Exit):
-    Display "Exiting program" and terminate loop.
-  Default:
-    Show "Invalid choice".
-
-Step 5: End program
+  
