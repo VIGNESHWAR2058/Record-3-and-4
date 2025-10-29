@@ -74,10 +74,17 @@ int main() {
 
         switch (choice) {
             case 1:
-                cout << "Enter value to insert: ";
-                cin >> value;
-                myArray.insert(value);
-                break;
+                 int n;
+                 cout << "How many values do you want to insert? ";
+                 cin >> n;
+            
+                 cout << "Enter " << n << " values: ";
+                 for (int i = 0; i < n; i++) {
+                     cin >> value;
+                     myArray.insert(value);
+                 }
+                 break;
+
             case 2:
                 cout << "Enter index to delete: ";
                 cin >> index;
