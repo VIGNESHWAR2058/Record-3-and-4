@@ -1,15 +1,21 @@
 Algorithm: Insert Function
 
-Step 1: Start
+Step 1: Start the program.
 
-Step 2: Get element from user
+Step 2: Prompt the user to enter an element to insert into the array.
+  → Input: element
 
-Step 3: If (size < 100)
-    Then
-      arr[size] = element
-      size = size + 1
-      Go to Step 4
-    Else
-      Print "Array is full. Cannot insert more elements"
+Step 3: Check the current size of the array.
+  → Condition: if size < 100
 
-Step 4: Stop
+Step 4:
+  If the condition is TRUE (size < 100):
+   a) Insert the element into the array at position arr[size].
+   b) Increment the size of the array by 1.
+     → size = size + 1
+
+  If the condition is FALSE (size >= 100):
+   a) Display the message:
+     → “Array is full. Cannot insert more elements.”
+
+Step 5: Stop the program.
