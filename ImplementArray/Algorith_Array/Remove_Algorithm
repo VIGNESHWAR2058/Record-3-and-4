@@ -1,0 +1,36 @@
+Algorithm: Remove Function
+
+Step 1: Start
+
+Step 2: Get index from the user.
+
+Step 3: Check the condition
+  If (index < 0 || index >= size) then
+    Go to Step 4
+  Else
+    Go to Step 5
+
+Step 4: Print "Invalid index"
+  Go to Step 10
+
+Step 5: Set i = index
+
+Step 6: Check the condition
+  If i < size - 1 then
+    Go to Step 7
+  Else
+    Go to Step 8
+
+Step 7:
+  Shift the elements to the left by one position:
+    arr[i] = arr[i + 1]
+    Repeat this step until all elements after the deleted index are shifted.
+
+Step 8:
+  Decrease the array size by one:
+    size = size - 1
+
+Step 9:
+  Print "Element deleted at index" followed by the value of index.
+
+Step 10: Stop
